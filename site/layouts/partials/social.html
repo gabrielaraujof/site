@@ -1,0 +1,22 @@
+<div class="social">
+  <ul class="social-links">
+    {{ if .Site.Params.Social.Github }}
+      <li><a href="https://github.com/{{ .Site.Params.Social.Github }}"><ion-icon name="logo-github"></ion-icon></a></li>
+    {{ end }}
+
+    {{ if .Site.Params.Social.Email }}
+      <li><a href="mailto:{{ .Site.Params.Social.Email }}"><ion-icon name="mail"></ion-icon></a></li>
+    {{ end }}
+
+    {{ if .Site.Params.Social.Twitter }}
+      <li><a href="https://twitter.com/{{ .Site.Params.Social.Twitter }}"><ion-icon name="logo-twitter"></ion -icon></a></li>
+    {{ end }}
+
+    {{ if .Site.Params.Social.LinkedIn }}
+      <li><a href="https://linkedin.com/in/{{ .Site.Params.Social.LinkedIn }}"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+    {{ end }}
+    {{ if .Site.Params.Social.Telegram }}
+      <li><a href="https://telegram.me/{{ .Site.Params.Social.Telegram }}"><ion-icon name="paper-plane"></ion-icon></a></li>
+    {{ end }}
+  </ul>
+</div>
